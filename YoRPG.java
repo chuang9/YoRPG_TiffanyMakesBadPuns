@@ -78,10 +78,9 @@ public class YoRPG
 	catch ( IOException e ) { }
 	s= "What class art thee of?";
 	s += "\n";
-	s += "Warrior: Warriors are noble and skilled. They have the ability to use" ;
-	s += "Monsters. \n";
+	s += "Warrior: Warriors are noble and skilled.\n";
 	s += "Mage: Magical people. Be careful of their powers.\n";
-	s += "Rogue: Micreants.\n";
+	s += "Rogue: Miscreants.\n";
 	s += "Dragon: Breathe fire.\n";
 	s += "Fairy: Likes unicorns and lives in Rainbows.\n";
 	s += "Type your desired character: ";
