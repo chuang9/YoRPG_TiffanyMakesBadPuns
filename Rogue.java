@@ -24,4 +24,12 @@ public class Rogue extends Character{
     public String about(){
 	return "Hello, I am a Rogue and my name is " + name;
     }
+    public int specialAtk(String s){
+	int num = Integer.parseInt(s);
+	if (num == 1){
+	    return 75;
+	}
+	return 25;
+	
+    }
 }

@@ -23,4 +23,12 @@ public class Monster extends Character {
     public String about(){
 	return "Hello, I am a Monster and my name is " + name;
     }
+    public int specialAtk(String s){
+	int num = Integer.parseInt(s);
+	if (num == 1){
+	    return 5;
+	}
+	return 10;
+	
+    }
 }

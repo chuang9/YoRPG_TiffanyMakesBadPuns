@@ -25,4 +25,12 @@ public class Fairy extends Character{
     public String about(){
 	return "Hello, I am a Fairy and my name is " + name;
     }
+    public int specialAtk(String s){
+	int num = Integer.parseInt(s);
+	if (num == 1){
+	    return 30;
+	}
+	return 45;
+	
+    }
 }

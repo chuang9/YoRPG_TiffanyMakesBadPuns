@@ -31,4 +31,6 @@ public abstract class Character{
 
     public abstract String about();
 
+    public abstract int specialAtk(String s);
+
 }

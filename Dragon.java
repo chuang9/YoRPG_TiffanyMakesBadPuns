@@ -25,4 +25,12 @@ public class Dragon extends Character{
     public String about(){
 	return "Hello, I am a Dragon and my name is " + name;
     }
+    public int specialAtk(String s){
+	int num = Integer.parseInt(s);
+	if (num == 1){
+	    return 80;
+	}
+	return 50;
+	
+    }
 }

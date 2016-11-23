@@ -27,5 +27,11 @@ public class Warrior extends Character{
     public String about(){
 	return "Hello, I am a Warrior and my name is " + name;
     }
+    public int specialAtk(String s){
+	int num = Integer.parseInt(s);
+	if (num == 1){
+	    return 90;
+	}
+	return 90;
+    }
 }
-
