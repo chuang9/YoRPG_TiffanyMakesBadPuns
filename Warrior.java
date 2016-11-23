@@ -15,9 +15,6 @@ public class Warrior extends Character{
         this();
         name = n;
     }
-    public String getName(){
-        return name;
-    }
     public void normalize(){
         defense = 20;
         atkRating = 0.4;
@@ -30,4 +27,3 @@ public class Warrior extends Character{
 	return "Hello, I am a Warrior and my name is " + name;
     }
 }
-
