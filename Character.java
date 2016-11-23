@@ -1,7 +1,7 @@
 // Team Tiffany Makes Bad Puns -- Bayan Berri, Chester Huang, Tiffany Moi
 // APCS1 pd5
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-22
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 public abstract class Character{
     protected String name;
     protected int health;
