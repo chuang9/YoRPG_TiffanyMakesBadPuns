@@ -26,7 +26,7 @@ public class Mage extends Character{
         atkRating += 0.5;
     }
     public String about(){
-	return "Hello, I am a Mage and my name is " + name;
+	return "Hello, I am a Mage and my name is " + name+" monsters fear me because mages are capable of using very strong magic. However, the use of spells is extremely dangerous and the consequences are huge. After spending years studying magic, with no interaction with society my nails are sharp as glass and my aim has improved tremendously. I can scratch the monsters and they won't know what hit them. And in case I can't get that close to the wretched creatures, I can always toss my wand!!";
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
