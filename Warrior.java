@@ -5,10 +5,12 @@
 
 public class Warrior extends Character{
     public Warrior(){
-	health = ((int)((Math.random()*100)+50));
-	strength = ((int)((Math.random()*100)+65));
-	defense = ((int)((Math.random()*20)+10));;
-	atkRating = ((Math.random()+.1));
+	health = (int)(Math.random() * 100 + 250); // [250, 350)
+	strength = (int)(Math.random() * 10 + 60); // [50, 60)
+	defense = (int)(Math.random() * 10 + 20); // [20, 30)
+	atkRating = (Math.random() / 2 + .5); // [0.5, 1.0)
+	defaultDef = defense;
+	defaultAR = atkRating;
     }
 
     public Warrior(String n){
@@ -16,8 +18,8 @@ public class Warrior extends Character{
         name = n;
     }
     public void normalize(){
-        defense = 20;
-        atkRating = 0.4;
+        defense = defaultDef;
+        atkRating = defaultAR;
     }
     public void specialize(){
         defense -= 5;

@@ -5,10 +5,12 @@
 
 public class Dragon extends Character{
     public Dragon(){
-	health = ((int)((Math.random()*100)+50));
-        strength = ((int)((Math.random()*100)+60));
-        defense = ((int)((Math.random()*30)+15));;
-        atkRating = (Math.random());
+	health = (int)(Math.random() * 100 + 250); // [250, 350)
+	strength = (int)(Math.random() * 20 + 60); // [60, 80)
+	defense = (int)(Math.random() * 15 + 25); // [25, 40)
+	atkRating = (Math.random() / 2 + .5); // [0.5, 1.0)
+	defaultDef = defense;
+	defaultAR = atkRating;
     }
 
     public Dragon(String n){
@@ -16,8 +18,8 @@ public class Dragon extends Character{
         name = n;
     }
     public void normalize(){
-        defense = 20;
-        atkRating = 0.4;
+        defense = defaultDef;
+        atkRating = defaultAR;
     }
     public void specialize(){
         defense -= 5;

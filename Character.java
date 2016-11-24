@@ -8,7 +8,9 @@ public abstract class Character{
     protected int health;
     protected int strength;
     protected int defense;
+    protected int defaultDef;
     protected double atkRating;
+    protected double defaultAR;
 
     public boolean isAlive(){
         return health > 0;

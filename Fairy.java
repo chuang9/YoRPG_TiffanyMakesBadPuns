@@ -5,10 +5,12 @@
 
 public class Fairy extends Character{
     public Fairy(){
-	health = ((int)((Math.random()*100)+50));
-        strength = ((int)((Math.random()*100)+55));
-        defense = ((int)((Math.random()*30)+15));;
-        atkRating = (Math.random());
+	health = (int)(Math.random() * 100 + 300); // [300, 400)
+	strength = (int)(Math.random() * 10 + 30); // [30, 40)
+	defense = (int)(Math.random() * 10 + 40); // [30, 40)
+	atkRating = (Math.random() / 4 + .75); // [0.75, 1.0)
+	defaultDef = defense;
+	defaultAR = atkRating;
     }
 
     public Fairy(String n){
@@ -16,12 +18,12 @@ public class Fairy extends Character{
         name = n;
     }
     public void normalize(){
-        defense = 20;
-        atkRating = 0.4;
+        defense = defaultDef;
+        atkRating = defaultAR;
     }
     public void specialize(){
         defense -= 5;
-        atkRating += 0.4;
+        atkRating += 0.6;
     }
     public String about(){
 	return "Hello, I am a Fairy and my name is " + name;

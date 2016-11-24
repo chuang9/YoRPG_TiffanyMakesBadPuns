@@ -5,10 +5,12 @@
 
 public class Rogue extends Character{
     public Rogue(){
-	health = ((int)((Math.random()*100)+50));
-	strength = ((int)((Math.random()*100)+55));
-	defense = ((int)((Math.random()*20)+10));;
-	atkRating = ((Math.random()+.1));
+	health = (int)(Math.random() * 100 + 200); // [200, 300)
+	strength = (int)(Math.random() * 25 + 25); // [25, 50)
+	defense = (int)(Math.random() * 20 + 10); // [10, 30)
+	atkRating = (Math.random() / 2 + 1); // [1.0, 1.5)
+	defaultDef = defense;
+	defaultAR = atkRating;
     }
 
     public Rogue(String n){
@@ -16,12 +18,12 @@ public class Rogue extends Character{
 	name = n;
     }
     public void normalize(){
-        defense = 20;
-        atkRating = 0.4;
+        defense = defaultDef;
+        atkRating = defaultAR;
     }
     public void specialize(){
-        defense -= 5;
-        atkRating += 0.4;
+        defense -= 10;
+        atkRating += 0.8;
     }
     public String about(){
 	return "Hello, I am a Rogue and my name is " + name;
