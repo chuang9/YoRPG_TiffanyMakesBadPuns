@@ -26,7 +26,7 @@ public class Fairy extends Character{
         atkRating += 0.6;
     }
     public String about(){
-	return "Hello, I am a Fairy and my name is " + name;
+	return "Hello, I am a Fairy and my name is " + name +"Don't let my small size fool you, it works against the monsters. They don't see me and when I sprinkle Fairydust in their eyes they can't see anything hehehe. I can also flap my wings at unimaginable speeds and blow the wretched creatures far far away. Ha, they won't ever know what hit them hehehe.";
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);

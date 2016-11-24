@@ -26,7 +26,7 @@ public class Dragon extends Character{
         atkRating += 0.4;
     }
     public String about(){
-	return "Hello, I am a Dragon and my name is " + name;
+	ret+= "Hello, I am a Dragon and my name is " + name+"My size allows me to squash my opponents with my large body. I am also capable of burning the wretched monsters. RAWRRRR" ;
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
