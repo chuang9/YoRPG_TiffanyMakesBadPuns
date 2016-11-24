@@ -55,6 +55,8 @@ public class YoRPG
     {
 	String s;
 	String name = "";
+	int class1 = 0;
+	
 	s = "~~~ Welcome to Ye Olde RPG! ~~~\n";
 
 	s += "\nChoose your difficulty: \n";
@@ -76,39 +78,39 @@ public class YoRPG
 	    name = in.readLine();
 	}
 	catch ( IOException e ) { }
-	s= "What class art thee of?";
+	
+	s= "\nWhat class art thee of?";
 	s += "\n";
-	s += "Warrior: Warriors are noble and skilled.\n";
-	s += "Mage: Magical people. Be careful of their powers.\n";
-	s += "Rogue: Miscreants.\n";
-	s += "Dragon: Breathe fire.\n";
-	s += "Fairy: Likes unicorns and lives in Rainbows.\n";
+	s += "\t1: Warrior - Noble and skilled.\n";
+	s += "\t2: Mage - Magical people. Be careful of their powers.\n";
+	s += "\t3: Rogue - Miscreants.\n";
+	s += "\t4: Fairy - Likes unicorns and lives in Rainbows.\n";
+	s += "\t5: Dragon - Breathe fire.\n";
 	s += "Type your desired character: ";
 	System.out.print(s);
-	String class1="";
+
 	try{
-	    class1=in.readLine();
+	    class1 = Integer.parseInt( in.readLine() );
 	}
 	catch(IOException e){}
-	if(class1.equals("Warrior")){
+	
+	if(class1 == 1){
 	    pat= new Warrior(name);
 	}
-	if(class1.equals("Mage")){
+	if(class1 == 2){
 	    pat=new Mage(name);
 	}
-	if(class1.equals("Rogue")){
+	if(class1 == 3){
 	    pat=new Rogue(name);
 	}
-	if(class1.equals("Fairy")){
+	if(class1 == 4){
 	    pat=new Fairy(name);
 	}
-	if(class1.equals("Dragon")){
+	if(class1 == 5){
 	    pat=new Dragon(name);
 	}
-	if(class1.equals("Monster")){
-	    pat=new Monster();
-	}
-	System.out.println("Welcome, ye of "+ class1 +".");
+	
+	System.out.println(pat.about() + "\n");
 	/* REMOVED FROM ORIGINAL DRIVER:
 	    
 	//instantiate the player's character
@@ -210,4 +212,3 @@ public class YoRPG
     }//end main
 
 }//end class YoRPG
-
