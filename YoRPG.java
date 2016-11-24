@@ -128,7 +128,7 @@ public class YoRPG
     public boolean playTurn()
     {
 	int i = 1;
-	int d1, d2;
+	int d1, d2, d3;
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
@@ -154,6 +154,7 @@ public class YoRPG
 		else
 		    pat.normalize();
 
+
 		d1 = pat.attack( smaug );
 		d2 = smaug.attack( pat );
 
@@ -162,6 +163,28 @@ public class YoRPG
 
 		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
+
+		
+		/*
+		try {
+		    System.out.println( "\nWould you like to perform a special attack?" );
+		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		    i = Integer.parseInt( in.readLine() );
+		}
+		catch ( IOException e ) { }
+
+		if (i == 2) {
+		    try {
+			System.out.println( "\nChoose your attack");
+			System.out.println(pat);
+			i = Integer.parseInt( in.readLine() );
+		    }
+		    d3 = pat.specialAtk(i);
+		}
+		*/
+
+
+		
 	    }//end while
 
 	    //option 1: you & the monster perish
