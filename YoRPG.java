@@ -129,6 +129,7 @@ public class YoRPG
     {
 	int i = 1;
 	int d1, d2, d3;
+	int p;
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
@@ -143,19 +144,23 @@ public class YoRPG
 		// If you land a hit, you incur greater damage,
 		// ...but if you get hit, you take more damage.
 		try {
-		    System.out.println( "\nDo you feel lucky?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		    System.out.println( "\nWhat is your move?" );
+		    System.out.println( pat );
+		    System.out.println( "Selection: ");
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 
-		if ( i == 2 )
+		p = pat.specialAtk(""+i);
+		
+		if ( i == 2 ){
 		    pat.specialize();
-		else
+		}
+		else{
 		    pat.normalize();
+		}
 
-
-		d1 = pat.attack( smaug );
+		d1 = pat.atk( smaug, p );
 		d2 = smaug.attack( pat );
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
@@ -166,21 +171,21 @@ public class YoRPG
 
 		
 		/*
-		try {
-		    System.out.println( "\nWould you like to perform a special attack?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
-		    i = Integer.parseInt( in.readLine() );
-		}
-		catch ( IOException e ) { }
+		  try {
+		  System.out.println( "\nWould you like to perform a special attack?" );
+		  System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		  i = Integer.parseInt( in.readLine() );
+		  }
+		  catch ( IOException e ) { }
 
-		if (i == 2) {
-		    try {
-			System.out.println( "\nChoose your attack");
-			System.out.println(pat);
-			i = Integer.parseInt( in.readLine() );
-		    }
-		    d3 = pat.specialAtk(i);
-		}
+		  if (i == 2) {
+		  try {
+		  System.out.println( "\nChoose your attack");
+		  System.out.println(pat);
+		  i = Integer.parseInt( in.readLine() );
+		  }
+		  d3 = pat.specialAtk(i);
+		  }
 		*/
 
 

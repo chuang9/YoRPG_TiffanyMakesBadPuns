@@ -31,6 +31,10 @@ public abstract class Character{
         c.lowerHP(d);
         return d;
     }
+    public int atk(Character c, int d){
+	c.lowerHP(d);
+	return d;
+    }
     public abstract void normalize();
     public abstract void specialize();
     public abstract String about();

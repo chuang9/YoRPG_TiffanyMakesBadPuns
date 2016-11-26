@@ -26,7 +26,7 @@ public class Dragon extends Character{
         atkRating += 0.4;
     }
     public String about(){
-	return "Hello, I am a Dragon and my name is " + name + "My size allows me to squash my opponents with my large body. I am also capable of burning the wretched monsters. RAWRRRR" ;
+	return "Hello, I am a Dragon and my name is " + name + ". My size allows me to squash my opponents with my large body. I am also capable of burning the wretched monsters. RAWRRRR" ;
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
@@ -34,6 +34,12 @@ public class Dragon extends Character{
 	    return 80;
 	}
 	return 50;
-	
     }
+    public String toString(){
+	String ret;
+	ret = "1. Flamethrower -- 80 HP\n";
+	ret += "2. Stomp -- 50 HP \n";
+	return ret;
+    }
+	    
 }
