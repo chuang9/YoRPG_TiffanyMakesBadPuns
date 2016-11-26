@@ -38,7 +38,7 @@ public class Fairy extends Character{
     public String toString(){
 	String ret;
 	ret = "1. Sprinkle Fairy Dust -- 30 HP\n";
-	ret += "2. Whirlwind -- 45 HP \n";
+	ret += "2. Whirlwind -- 45 HP";
 	return ret;
     }
 }

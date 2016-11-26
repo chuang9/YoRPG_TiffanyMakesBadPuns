@@ -38,7 +38,7 @@ public class Dragon extends Character{
     public String toString(){
 	String ret;
 	ret = "1. Flamethrower -- 80 HP\n";
-	ret += "2. Stomp -- 50 HP \n";
+	ret += "2. Stomp -- 50 HP";
 	return ret;
     }
 	    

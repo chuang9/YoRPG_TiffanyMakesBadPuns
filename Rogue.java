@@ -31,7 +31,7 @@ public class Rogue extends Character{
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
 	if (num == 1){
-	    return 75;
+	    return 95;
 	}
 	return 25;
 	
@@ -39,7 +39,7 @@ public class Rogue extends Character{
     public String toString(){
 	String ret;
 	ret = "1. Shadow Ball -- 95 HP\n";
-	ret += "2. Kick -- 25 HP \n";
+	ret += "2. Kick -- 25 HP";
 	return ret;
     }
 }

@@ -38,7 +38,7 @@ public class Warrior extends Character{
     public String toString(){
 	String ret;
 	ret = "1. Knife Toss -- 90 HP\n";
-	ret += "2. Karate Chop -- 90 HP \n";
+	ret += "2. Karate Chop -- 90 HP";
 	return ret;
     }
 }

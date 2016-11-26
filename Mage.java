@@ -40,7 +40,7 @@ public class Mage extends Character{
     public String toString(){
 	String ret;
 	ret = "1. Scratch -- 5 HP\n";
-	ret += "2. Wand Throw -- 10 HP \n";
+	ret += "2. Wand Throw -- 10 HP";
 	return ret;
     }
 }
