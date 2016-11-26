@@ -24,6 +24,7 @@
 * Fixed the random values of the stats/instance variables.
 * added section in the driver file for special attacks
 * special attack takes in the string of a number
+* changed attack in case of negative numbers. 
 
 ## How To Play
 1. After compiling and running YoRPG, answer the questions displayed in the terminal. These questions might include:
