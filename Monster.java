@@ -23,7 +23,7 @@ public class Monster extends Character{
         atkRating += 0.4;
     }
     public String about(){
-	return "Hello, I am a Monster and my name is bayan";
+	return "Hello, I am a Monster and my name is bayan.";
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
