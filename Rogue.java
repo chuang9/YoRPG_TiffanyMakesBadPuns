@@ -26,7 +26,7 @@ public class Rogue extends Character{
         atkRating += 0.8;
     }
     public String about(){
-	return "Hello, I am a Rogue and my name is " + name;
+	return "Hello, I am a Rogue and my name is " + name+"I'm a sneaky one. Your opponents will never see me coming because I live in the darkness... or some might say... the darkness lives in me. Anyway, that's besides the point. I can use that to my advantage and channel the dark energy to fight against the monsters. Not only do I throw a mean shadow ball but I can also kick the monsters back to where they came from if I can get close enough!!";
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);

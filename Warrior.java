@@ -26,7 +26,7 @@ public class Warrior extends Character{
         atkRating += 0.4;
     }
     public String about(){
-	return "Hello, I am a Warrior and my name is " + name;
+	return "Hello, I am a Warrior and my name is " + name+"I'm noble in spirit and skilled in battle. I  have great proficiency with a multitude of short-range weapons, including knives. I can toss with incredible aim. However, even without a weapon I can still complete my tasks as I am very well versed in Karate. I vow to fight for the honor of our kingdom and good of my people. ";
     }
     public int specialAtk(String s){
 	int num = Integer.parseInt(s);
