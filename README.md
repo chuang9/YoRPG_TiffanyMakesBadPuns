@@ -7,15 +7,19 @@
 ### Warrior
 1. Knife Toss -- 90 HP
 2. Karate Chop -- 90 HP
+
 ### Mage
 1. Scratch -- 5 HP
 2. Wand Throw -- 10 HP
+
 ### Fairy
 1. Sprinkle Fairy Dust -- 30 HP
 2. Whirlwind -- 45 HP
+
 ### Dragon
 1. Flamethrower -- 80 HP
 2. Stomp -- 50 HP
+
 ### Rogue
 1. Shadow Ball -- 95 HP
 2. Kick -- 25 HP
