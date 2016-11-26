@@ -110,7 +110,7 @@ public class YoRPG
 	    pat=new Dragon(name);
 	}
 	
-	System.out.println(pat.about() + "\n");
+	System.out.println("\n" + pat.about() + "\n");
 	/* REMOVED FROM ORIGINAL DRIVER:
 	    
 	//instantiate the player's character
@@ -144,23 +144,30 @@ public class YoRPG
 		// If you land a hit, you incur greater damage,
 		// ...but if you get hit, you take more damage.
 		try {
-		    System.out.println( "\nWhat is your move?" );
+		    System.out.println( "\nWhat would you like to do?" );
 		    System.out.println( pat );
+		    System.out.println("3. Normal Attack -- based on your strength and attack rating");
+		    System.out.println("4. Specialize -- incur greater damage but take more damage \n");
 		    System.out.println( "Selection: ");
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 
-		p = pat.specialAtk(""+i);
-		
-		if ( i == 2 ){
-		    pat.specialize();
+		if ((i == 1) || (i == 2)) {
+		    p = pat.specialAtk(""+i);
+		    d1 = pat.atk( smaug, p );
 		}
-		else{
+		else if (i == 3){
 		    pat.normalize();
+		    d1 = pat.attack(smaug);
+		}
+	       
+		else{
+		    pat.specialize();
+		    d1 = pat.attack(smaug);
 		}
 
-		d1 = pat.atk( smaug, p );
+		
 		d2 = smaug.attack( pat );
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
@@ -168,29 +175,8 @@ public class YoRPG
 
 		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
-
 		
-		/*
-		  try {
-		  System.out.println( "\nWould you like to perform a special attack?" );
-		  System.out.println( "\t1: Nay.\n\t2: Aye!" );
-		  i = Integer.parseInt( in.readLine() );
-		  }
-		  catch ( IOException e ) { }
-
-		  if (i == 2) {
-		  try {
-		  System.out.println( "\nChoose your attack");
-		  System.out.println(pat);
-		  i = Integer.parseInt( in.readLine() );
-		  }
-		  d3 = pat.specialAtk(i);
-		  }
-		*/
-
-
-		
-	    }//end while
+      	    }//end while
 
 	    //option 1: you & the monster perish
 	    if ( !smaug.isAlive() && !pat.isAlive() ) {
