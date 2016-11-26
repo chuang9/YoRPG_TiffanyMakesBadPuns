@@ -1,7 +1,7 @@
 # YoRPG_TiffanyMakesBadPuns
 ## Feature Additions
 
-* Each Class has 2 special attacks that deal a set amount of damage. 
+* Each class has 2 special attacks that deal a set amount of damage. 
 * Updated the about() methods within each class to include a description with special attacks.
 
 ### Warrior
@@ -25,16 +25,20 @@
 2. Kick -- 25 HP
 
 ## Code Restructurings
-* Fixed the random values of the stats/instance variables.
-* added section in the driver file for special attacks
-* special attack takes in the string of a number
-* changed attack in case of negative numbers. 
+* Fixed the random values that are given to a Character during initialization.
+* Added a section in the driver file for special attacks.
+* Class selection now requires a numeric input instead of a string.
+* Changed attack() in the case of negative numbers. 
 
 ## How To Play
-1. After compiling and running YoRPG, answer the questions displayed in the terminal. These questions might include:
-* name
-* class
+1. Compile and run YoRPG.
+2. Answer the questions displayed in the terminal regarding:
 * level of difficulty
-2. After answering these questions you will be asked whether or not you're feeling lucky, aka whether or not you'd like to attack the monster.
-3. Continue reading the messages displayed on the terminal and deciding your attack
+* the name of your character
+* the class of your character
+3. When you encounter a monster, choose an appropriate option:
+* one of two custom attacks for your class
+* a normal attack based on your strength and attack rating
+* specialize to do more damage but take more damage
+4. Continue slaying monsters until victory or death.
 
