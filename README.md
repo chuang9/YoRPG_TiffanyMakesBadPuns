@@ -33,12 +33,12 @@
 ## How To Play
 1. Compile and run YoRPG.
 2. Answer the questions displayed in the terminal regarding:
-* level of difficulty
-* the name of your character
-* the class of your character
+  * level of difficulty
+  * the name of your character
+  * the class of your character
 3. When you encounter a monster, choose an appropriate option:
-* one of two custom attacks for your class
-* a normal attack based on your strength and attack rating
-* specialize to do more damage but take more damage
+  * one of two custom attacks for your class
+  * a normal attack based on your strength and attack rating
+  * specialize to do more damage but take more damage
 4. Continue slaying monsters until victory or death.
 
